@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  cacher-service:
+    build: ./cacher
+    ports:
+      - 5001:80
+  redis:
+    image: "redis:alpine"
